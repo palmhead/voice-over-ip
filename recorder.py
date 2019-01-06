@@ -14,7 +14,7 @@ UDP_PORT = 5005
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 p = pyaudio.PyAudio()
 
-stream = p.open(format=FORMAT,channels=CHANNELS,rate=RATE,input=True, output=True, frames_per_buffer=CHUNK)
+stream = p.open(format=FORMAT,channels=CHANNELS,rate=RATE,input=True,frames_per_buffer=CHUNK)
 print("recording.")
 
 frames = []
